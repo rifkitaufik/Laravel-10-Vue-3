@@ -14,6 +14,9 @@ defineProps({
     status: {
         type: String,
     },
+    head: {
+        type: String,
+    },
 });
 
 const form = useForm({
@@ -31,7 +34,8 @@ const submit = () => {
 
 <template>
     <GuestLayout>
-        <Head title="Log in" />
+<!--        <Head :title="head" />-->
+        <Head title="Wahyu Aja" />
 
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
             {{ status }}
